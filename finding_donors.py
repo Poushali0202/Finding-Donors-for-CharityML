@@ -291,7 +291,30 @@ print ("Naive Predictor: [Accuracy score: {:.4f}, F-score: {:.4f}]".format(accur
 # 
 # Structure your answer in the same format as above^, with 4 parts for each of the three models you pick. Please include references with your answer.
 
-# **Answer: **After trying all the models as all of them are Classification models, I have selected Random Forest, Gradient Boosting and Logistic Regression as candidate models.
+# **Answer: ** 
+Random Forest Classifier:
+
+Random Forest can be used to improve the personalization technology of Netflix for example.
+
+The model is easy to use. It can very easily handle categorical variables that do not expect linear features or even features that interact linearly. The model also handles high dimensional spaces very well, as well as large numbers of training examples. Finally, it's less likely to overfit than a decision tree. However, it's more difficult to interpret a Random Forest than a Decision Tree.
+
+We should apply this model because it's easy to use, handles categorical variables very well, and is not prone to overfitting like traditional decision trees.
+
+Naive Bayes:
+
+Naive Bayes is often used for spam filtering.
+
+The model performs very well when there are lot of features, and it's simple and easy to understand. However the disadvantage of the model is that it makes a strong assumption about the independance of the features.
+
+The dataset includes 103 features after one-hot encoding. Because Naive Bayes provides good performance when there are lot of features, we should apply this model.
+
+Adaboost:
+
+Adaboost can be used for face detection.
+
+Adaboost is a powerfull classification algorithm that tends to be very adaptive. It can capture very complex decision boundaries. Another advantage, it doesn't require to tweak lot of parameters. However, the algorithm tends to be sensitive to noisy data and outliers. It can also be slow to train.
+
+We can apply this model because it's a medium dataset (45 222 records). The model can be slow to train, however it shouldn't matter because we probably want to run the model periodically and not in real-time.
 
 # ### Implementation - Creating a Training and Predicting Pipeline
 # To properly evaluate the performance of each model you've chosen, it's important that you create a training and predicting pipeline that allows you to quickly and effectively train models using various sizes of training data and perform predictions on the testing data. Your implementation here will be used in the following section.
